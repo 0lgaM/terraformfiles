@@ -1,0 +1,7 @@
+Note: ssh_key.sh file looks like:
+
+#!bin/bash
+mkdir ~/.ssh/
+echo "your_key_is_here" > ~/.ssh/authorized_keys 
+chmod 400 ~/.ssh/authorized_keys 
+
