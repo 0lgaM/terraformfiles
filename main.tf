@@ -21,7 +21,7 @@ resource "aws_instance" "web-server" {
   vpc_security_group_ids = [aws_security_group.test.id]
   user_data              = "${file("ssh_key.sh")}"
   tags = {
-    Name = "TestServer"
+    Name = "WebServer"
   }
 }
 
