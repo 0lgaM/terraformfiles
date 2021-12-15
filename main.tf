@@ -15,7 +15,7 @@ provider "aws" {
 }
 
 
-resource "aws_instance" "test_server" {
+resource "aws_instance" "web-server" {
   ami                    = "ami-05f7491af5eef733a"
   instance_type          = "t2.micro"
   vpc_security_group_ids = [aws_security_group.test.id]
